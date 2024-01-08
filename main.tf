@@ -14,7 +14,7 @@ secret_key = var.AWS_SECRET_KEY
 region = "ap-south-1"
 } 
 resource "aws_instance" "myec2" {
-ami           = "ami-0de8ed6a5c916be12"
+ami           = "ami-04d28c9c7035ba30b"
 instance_type = "t2.micro"
 vpc_security_group_ids=[aws_security_group.web-sg.id]
 key_name="tf-key-pair"  
